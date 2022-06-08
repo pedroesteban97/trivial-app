@@ -1,0 +1,567 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../media/images/fondo.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.inicio {
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
+    border: solid rgb(54, 54, 54) 5px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px #1883ba;
+}
+
+@media (min-width: 600px) {
+    .inicio {
+        background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
+        border: solid rgb(54, 54, 54) 5px;
+        width: 65%;
+        height: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 5px 5px 20px #1883ba;
+    }
+}
+
+@media (min-width: 1110px) {
+    .inicio {
+        background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
+        border: solid rgb(54, 54, 54) 5px;
+        width: 38%;
+        height: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 5px 5px 20px #1883ba;
+    }
+}
+.inicioclasico {
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
+    border: solid rgb(54, 54, 54) 5px;
+    width: 90%;
+    height: 670px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px #1883ba;
+}
+@media (min-width: 600px) {
+    .inicioclasico {
+        background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
+        border: solid rgb(54, 54, 54) 5px;
+        width: 70%;
+        height: 630px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 5px 5px 20px #1883ba;
+    }
+    .boton_comienza {
+        text-decoration: none;
+        width: 30%;
+        padding: 8px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 6px;
+        border: 1px solid #0016b0;
+    }
+    
+    .boton_comienza:hover {
+        color: #ffffff;
+        background-color: rgba(17, 142, 17, 0.727);
+    }
+    
+    .boton_vuelveinicio {
+        text-decoration: none;
+        width: 30%;
+        padding: 8px;
+        margin-left: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 6px;
+        border: 1px solid #0016b0;
+    }
+    
+    .boton_vuelveinicio:hover {
+        color: #ffffff;
+        background-color: #c03b3bca;
+    }
+}
+@media (min-width: 1110px) {
+    .inicioclasico {
+        background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
+        border: solid rgb(54, 54, 54) 5px;
+        width: 40%;
+        height: 630px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 5px 5px 20px #1883ba;
+    }
+    .boton_comienza {
+        text-decoration: none;
+        width: 30%;
+        padding: 8px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 6px;
+        border: 1px solid #0016b0;
+    }
+    
+    .boton_comienza:hover {
+        color: #ffffff;
+        background-color: rgba(17, 142, 17, 0.727);
+    }
+    
+    .boton_vuelveinicio {
+        text-decoration: none;
+        width: 30%;
+        margin-left: 30px;
+        padding: 8px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 6px;
+        border: 1px solid #0016b0;
+    }
+    
+    .boton_vuelveinicio:hover {
+        color: #ffffff;
+        background-color: #c03b3bca;
+    }
+}
+.iniciocontrarreloj {
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
+    border: solid rgb(54, 54, 54) 5px;
+    width: 90%;
+    height: 755px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px #1883ba;
+}
+@media (min-width: 840px) {
+    .iniciocontrarreloj {
+        background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
+        border: solid rgb(54, 54, 54) 5px;
+        width: 60%;
+        height: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 5px 5px 20px #1883ba;
+    }
+}
+@media (min-width: 1310px) {
+    .iniciocontrarreloj {
+        background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
+        border: solid rgb(54, 54, 54) 5px;
+        width: 40%;
+        height: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 5px 5px 20px #1883ba;
+    }
+}
+
+
+.tituloportada {
+    color: rgb(39, 38, 38);
+    font-family: 'Dongle', sans-serif;
+    text-align: center;
+    font-size: 51px;
+}
+
+
+.titulomaxpuntuaciones {
+    color: rgb(39, 38, 38);
+    font-family: 'Dongle', sans-serif;
+    text-align: center;
+    font-size: 45px;
+}
+
+.titulopuntosfinal {
+    font-size: 55px;
+}
+
+#demo-simple-select {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+.boton_personalizado {
+    text-decoration: none;
+    width: 40%;
+    margin-left: 46px;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 1px solid #0016b0;
+}
+
+.boton_personalizado:hover {
+    color: #1883ba;
+    background-color: #d0dbdb;
+}
+
+.boton_comienza {
+    text-decoration: none;
+    width: 36%;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 1px solid #0016b0;
+}
+
+.boton_comienza:hover {
+    color: #ffffff;
+    background-color: rgba(17, 142, 17, 0.727);
+}
+
+.boton_vuelveinicio {
+    text-decoration: none;
+    width: 50%;
+    padding: 8px;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 1px solid #0016b0;
+}
+
+.boton_vuelveinicio:hover {
+    color: #ffffff;
+    background-color: #c03b3bca;
+}
+
+.boton_personalizadoinicio {
+    text-decoration: none;
+    width: 60%;
+    margin: 15px;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 1px solid #0016b0;
+}
+
+.boton_personalizadoinicio:hover {
+    color: #1883ba;
+    background-color: #d0dbdb;
+}
+
+.boton_error {
+    text-decoration: none;
+    width: 40%;
+    margin: 0 auto;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 1px solid #0016b0;
+}
+
+.boton_error:hover {
+    color: #1883ba;
+    background-color: #d0dbdb;
+}
+
+.boton_maxpunt {
+    text-decoration: none;
+    width: 44%;
+    margin-left: 26%;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 8px;
+    border: 1px solid #0016b0;
+}
+
+.boton_maxpunt:hover {
+    color: #1883ba;
+    background-color: #d0dbdb;
+}
+
+.cargando {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.imagenpreguntados {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.paginaerror {
+    text-align: center;
+}
+
+.paginaerror h1 {
+    font-size: 70px;
+}
+
+.preguntas {
+    text-align: center;
+    width: 60%;
+}
+
+hr {
+    border: solid rgb(52, 39, 147) 1px;
+}
+
+.preguntas p {
+    margin-top: 4%;
+    font-size: 22px;
+}
+
+
+.botonrespuestas {
+    text-decoration: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 8px;
+    border: 1px solid #0016b0;
+}
+
+
+.puntuacion_final {
+    text-align: center;
+    width: 100%;
+}
+
+
+.botonpuntuacionfinal {
+    text-decoration: none;
+    width: 35%;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 1px solid #0016b0;
+}
+
+
+
+.botonpuntuacionfinal:hover {
+    color: #ffffff;
+    background-color: #c03b3bca;
+}
+
+
+.guardapuntos {
+    height: 50px;
+    font-size: 18px;
+    width: 80%;
+    color: black;
+    font-weight: 300;
+    margin: auto;
+}
+.btn_guardapuntos {
+    text-decoration: none;
+    width: 10%;
+    margin: 10px;
+    height: 33px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border: 1px solid #0016b0;
+}
+
+@media (min-width: 700px) {
+    .puntuacion_final {
+        text-align: center;
+        width: 100%;
+    }
+    
+    
+    .botonpuntuacionfinal {
+        text-decoration: none;
+        width: 35%;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 6px;
+        border: 1px solid #0016b0;
+    }
+    
+    
+    
+    .botonpuntuacionfinal:hover {
+        color: #ffffff;
+        background-color: #c03b3bca;
+    }
+    
+    
+    .guardapuntos {
+        height: 50px;
+        font-size: 18px;
+        width: 44%;
+        color: black;
+        font-weight: 300;
+        margin: auto;
+    }
+    .btn_guardapuntos {
+        text-decoration: none;
+        margin: 10px;
+        height: 33px;
+        width: 44%;
+        padding: 5px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border: 1px solid #0016b0;
+    }
+}
+
+@media (min-width: 1310px) {
+    .puntuacion_final {
+        text-align: center;
+        width: 90%;
+    }
+    
+    
+    .botonpuntuacionfinal {
+        text-decoration: none;
+        width: 35%;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 6px;
+        border: 1px solid #0016b0;
+    }
+    
+    
+    
+    .botonpuntuacionfinal:hover {
+        color: #ffffff;
+        background-color: #c03b3bca;
+    }
+    
+    
+}
+
+.modocontrarreloj {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.reloj h2 {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.iconoexit {
+    cursor: pointer;
+    color: rgb(215, 18, 18);
+    font-weight: bold;
+    float: right;
+    margin-top: -45px;
+}
+
+.paginainicio {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+#contrarreloj {
+    width: 28%;
+}
+
+.correcto {
+    background-color: rgba(9, 125, 9, 0.871);
+}
+
+.incorrecto {
+    background-color: rgba(229, 22, 22, 0.883);
+}
+
+.estadisticas {
+    margin: 0 auto;
+    font-size: 20px;
+    width: 40%;
+}
+
+.guardapuntuacion {
+    font-size: 20px;
+}
+
+.guardapuntosinput {
+    text-align: center;
+    width: 250px;
+    height: 35px;
+    border: solid black 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn_guardapuntos {
+    text-decoration: none;
+    width: 20%;
+    margin: 10px;
+    height: 33px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border: 1px solid #0016b0;
+}
+
+.tablamax {
+    text-align: center;
+    font-size: 18px;
+}
+
+.iconotabla {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
