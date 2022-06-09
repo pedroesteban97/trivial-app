@@ -81,6 +81,7 @@ const Preguntas = () => {
       showDenyButton: false,
       denyButtonText: `NO`,
       confirmButtonText: 'Volver',
+      allowOutsideClick: false,
     }).then((result) => {
       if (result.isConfirmed) {
         navigate("/preguntasclasicoinicio");
