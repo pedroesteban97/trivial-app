@@ -21,7 +21,7 @@ const InputPuntuacion = () => {
             posicion: posicion,
         }
         
-        if (nombre.length == 0 || nombre.length > 18) {
+        if (nombre.length === 0 || nombre.length > 15) {
             Swal.fire({
                 icon: 'error',
                 title: 'Error al guardar la puntuación',
