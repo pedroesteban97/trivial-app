@@ -41,12 +41,13 @@ const Opciones = () => {
     if (cantidadPreguntas === undefined || cantidadPreguntas < 1 || cantidadPreguntas > 50) {
       Swal.fire({
         icon: 'error',
-        title: 'Número de preguntas ngito válido',
+        title: 'Número de preguntas no válido',
         text: 'El número de preguntas debe ser entre 1 y 50',
         showConfirmButton: false,
         timer: 2000,
       })
-    } else {
+    } 
+    else {
       navigate("/preguntasclasico");
     }
   };

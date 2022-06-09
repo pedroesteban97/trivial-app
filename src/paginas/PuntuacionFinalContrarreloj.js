@@ -11,7 +11,7 @@ const PuntuacionContrarreloj = () => {
   
   return (
     <div className='container puntuacion_final'>
-      <p className='animate__animated animate__pulse titulopuntosfinal'>¡Has finalizado la partida!</p>
+      <p className='animate__animated animate__pulse titulopuntosfinal'>¡El tiempo ha terminado!</p>
       <hr />
       <div className='mt-5 estadisticas'>
       <h2>Estadísticas Modo Contrarreloj</h2>

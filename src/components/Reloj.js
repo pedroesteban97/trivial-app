@@ -46,7 +46,7 @@ const Reloj = () => {
     const getDeadTime = () => {
         let deadline = new Date();
 
-        deadline.setSeconds(deadline.getSeconds() + 60);
+        deadline.setSeconds(deadline.getSeconds() + 10);
         return deadline;
     }
 

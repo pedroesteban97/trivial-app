@@ -12,13 +12,13 @@ const Inicio = () => {
 
   const handleModoClasico = () => {
     dispatch(handleScoreChange(0));
-    dispatch(handleAmountChange(50));
+    dispatch(handleAmountChange(0));
     navigate("/preguntasclasicoinicio");
   };
 
   const handleModoContrarreloj = () => {
     dispatch(handleScoreChange(0));
-    dispatch(handleAmountChange(50));
+    dispatch(handleAmountChange(0));
     navigate("/preguntascontrarrelojinicio");
   };
 

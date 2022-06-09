@@ -32,7 +32,7 @@ const MaximasPuntuaciones = () => {
 
   if (puntos === null) {
     Swal.fire({
-      icon: 'warning',
+      icon: 'info',
       title: 'No hay puntuaciones disponibles',
       text: 'Se el primero en guardar una puntuación',
       showDenyButton: false,

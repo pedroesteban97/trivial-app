@@ -15,7 +15,7 @@ const PuntuacionFinal = () => {
 
   const handleVolverInicio = () => {
     dispatch(handleScoreChange(0));
-    dispatch(handleAmountChange(10));
+    dispatch(handleAmountChange(0));
     navigate("/");
   };
 

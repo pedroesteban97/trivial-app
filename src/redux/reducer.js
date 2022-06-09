@@ -4,7 +4,7 @@ const initialState = {
     categoriaPregunta: "",
     dificultadPregunta: "",
     tipoPregunta: "",
-    cantidadPreguntas: "50",
+    cantidadPreguntas: "0",
     score: 0,
 };
 

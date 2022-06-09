@@ -73,6 +73,22 @@ const Preguntas = () => {
     );
   }
 
+  if (response.response_code !== 0) {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Vaya... algo salió mal',
+      text: 'No hay preguntas suficientes, elige otras opciones',
+      showDenyButton: false,
+      denyButtonText: `NO`,
+      confirmButtonText: 'Volver',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        navigate("/preguntasclasicoinicio");
+        window.location.replace('');
+      }
+    })
+  }
+
   const handleClickAnswer = (e) => {
 
     const question = response.results[preguntaIndice];
