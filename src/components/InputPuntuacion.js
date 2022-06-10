@@ -20,12 +20,23 @@ const InputPuntuacion = () => {
             numeropreguntas: cantidadPreguntas,
             posicion: posicion,
         }
-        
-        if (nombre.length === 0 || nombre.length > 15) {
+
+        if (nombre.length === 0) {
             Swal.fire({
                 icon: 'error',
-                title: 'Error al guardar la puntuación',
-                text: 'Para guardar tu puntuación debes escribir un nombre o añadir uno más corto'
+                title: 'ERROR',
+                text: 'Debes escribir un nombre',
+                showConfirmButton: false,
+                timer: 2500
+            })
+            return false;
+        } else if (nombre.length > 15) {
+            Swal.fire({
+                icon: 'error',
+                title: 'ERROR',
+                text: 'Debes añadir un nombre más corto',
+                showConfirmButton: false,
+                timer: 2500
             })
             return false;
         };

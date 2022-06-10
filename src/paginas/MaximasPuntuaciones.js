@@ -46,7 +46,7 @@ const MaximasPuntuaciones = () => {
     })
   }
 
-  const handleClick = (e) => {
+  const handleClickVolver = (e) => {
     e.preventDefault();
     navigate("/");
 
@@ -75,7 +75,7 @@ const MaximasPuntuaciones = () => {
           </tr>
         </tbody>
       </table>
-      <button onClick={handleClick} className="btn boton_maxpunt mt-5" type="submit">Volver a Inicio</button>
+      <button onClick={handleClickVolver} className="btn boton_maxpunt mt-5" type="submit">Volver a Inicio</button>
     </div>
   )
 }

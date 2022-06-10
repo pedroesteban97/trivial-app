@@ -35,6 +35,7 @@ const PreguntasContrarreloj = () => {
   const { response, loading } = useAxios({ url: apiUrl });
   const [preguntaIndice, setPreguntaIndice] = useState(0);
   const [opciones, setOpciones] = useState([]);
+  const [disable, setDisable] = useState(false);
 
   useEffect(() => {
 
@@ -60,6 +61,7 @@ const PreguntasContrarreloj = () => {
 
   const handleClickAnswer = (e) => {
     const question = response.results[preguntaIndice];
+    setDisable(true);
     if (e.target.textContent === question.correct_answer) {
       dispatch(handleScoreChange(score + 10));
       e.target.classList.add("correcto");
@@ -69,13 +71,14 @@ const PreguntasContrarreloj = () => {
 
       setTimeout(() => {
         if (preguntaIndice + 1 < response.results.length) {
+          setDisable(false);
           setPreguntaIndice(preguntaIndice + 1)
           e.target.classList.remove("correcto");
           e.target.classList.remove("incorrecto");
         } else {
           navigate("/puntuacionfinalcontrarreloj");
         }
-      }, 1200);
+      }, 1100);
 
   };
 
@@ -109,7 +112,7 @@ const PreguntasContrarreloj = () => {
 
       {opciones.map((data, id) => (
         <div key={id}>
-          <button onClick={handleClickAnswer} className="my-2 botonrespuestas">{decode(data)}</button>
+          <button disabled={disable} onClick={handleClickAnswer} className="my-2 botonrespuestas">{decode(data)}</button>
         </div>
       ))}
 

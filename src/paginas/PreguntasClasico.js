@@ -48,6 +48,7 @@ const Preguntas = () => {
   const { response, loading } = useAxios({ url: apiUrl });
   const [preguntaIndice, setPreguntaIndice] = useState(0);
   const [opciones, setOpciones] = useState([]);
+  const [disable, setDisable] = useState(false);
 
 
   
@@ -77,7 +78,7 @@ const Preguntas = () => {
     Swal.fire({
       icon: 'warning',
       title: 'Vaya... algo salió mal',
-      text: 'No hay preguntas suficientes, elige otras opciones',
+      text: 'No hay suficientes preguntas en la API de las opciones seleccionadas :(',
       showDenyButton: false,
       denyButtonText: `NO`,
       confirmButtonText: 'Volver',
@@ -93,8 +94,9 @@ const Preguntas = () => {
   const handleClickAnswer = (e) => {
 
     const question = response.results[preguntaIndice];
+    setDisable(true);
     if (e.target.textContent === question.correct_answer) {
-      dispatch(handleScoreChange(score + 10))
+      dispatch(handleScoreChange(score + 10));
       e.target.classList.add("correcto");
     } else {
       e.target.classList.add("incorrecto");
@@ -102,7 +104,8 @@ const Preguntas = () => {
 
       setTimeout(() => {
         if (preguntaIndice + 1 < response.results.length) {
-          setPreguntaIndice(preguntaIndice + 1)
+          setDisable(false);
+          setPreguntaIndice(preguntaIndice + 1);
           e.target.classList.remove("correcto");
           e.target.classList.remove("incorrecto");
         } else {
@@ -138,7 +141,7 @@ const Preguntas = () => {
 
       {opciones.map((data, id) => (
         <div key={id}>
-          <button onClick={handleClickAnswer} className="my-2 botonrespuestas">{decode(data)}</button>
+          <button disabled={disable} onClick={handleClickAnswer} className="my-2 botonrespuestas">{decode(data)}</button>
         </div>
       ))}
       <p>Pregunta {preguntaIndice + 1} / {response.results.length} </p>
