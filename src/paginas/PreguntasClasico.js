@@ -51,6 +51,8 @@ const Preguntas = () => {
   const [disable, setDisable] = useState(false);
 
 
+
+
   
   useEffect(() => {
 
@@ -78,7 +80,7 @@ const Preguntas = () => {
     Swal.fire({
       icon: 'warning',
       title: 'Vaya... algo salió mal',
-      text: 'No hay suficientes preguntas en la API de las opciones seleccionadas :(',
+      text: 'Se ha producido un error a la hora de cargar las preguntas. Por favor, inicia una nueva partida',
       showDenyButton: false,
       denyButtonText: `NO`,
       confirmButtonText: 'Volver',

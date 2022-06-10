@@ -23,18 +23,16 @@ const InputPuntuacion = () => {
 
         if (nombre.length === 0) {
             Swal.fire({
-                icon: 'error',
-                title: 'ERROR',
-                text: 'Debes escribir un nombre',
+                icon: 'warning',
+                title: 'DEBES ESCRIBIR UN NOMBRE',
                 showConfirmButton: false,
                 timer: 2500
             })
             return false;
         } else if (nombre.length > 15) {
             Swal.fire({
-                icon: 'error',
-                title: 'ERROR',
-                text: 'Debes añadir un nombre más corto',
+                icon: 'warning',
+                title: 'ELIGE UN NOMBRE MÁS CORTO',
                 showConfirmButton: false,
                 timer: 2500
             })

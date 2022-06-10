@@ -28,7 +28,7 @@ const Inicio = () => {
 
   return (
     <div className="inicio">
-      <abbr title="PUNTUACIONES"><GrScorecard className='iconotabla' onClick={handlePuntuaciones}/></abbr>
+      <abbr title="Puntuaciones"><GrScorecard className='iconotabla' onClick={handlePuntuaciones}/></abbr>
       <h1 className="tituloportada"><b>TRIVIAL APP</b></h1>
       <hr />
       <div className="paginainicio mt-4">

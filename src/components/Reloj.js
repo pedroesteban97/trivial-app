@@ -46,7 +46,7 @@ const Reloj = () => {
     const getDeadTime = () => {
         let deadline = new Date();
 
-        deadline.setSeconds(deadline.getSeconds() + 10);
+        deadline.setSeconds(deadline.getSeconds() + 60);
         return deadline;
     }
 
@@ -57,7 +57,7 @@ const Reloj = () => {
 
     return (
         <div className="reloj">
-            <h2> <AiOutlineClockCircle/> Tiempo Restante:  {timer} segundos</h2>
+            <h2> <AiOutlineClockCircle/> Tiempo Restante:  <b>{timer} segundos</b></h2>
         </div>
     )
 }

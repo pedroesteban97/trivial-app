@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { CircularProgress } from '@mui/material';
 import { GrScorecard } from "react-icons/gr";
 import Swal from 'sweetalert2';
+import { BiArrowBack } from 'react-icons/bi';
 
 
 const MaximasPuntuaciones = () => {
@@ -54,6 +55,7 @@ const MaximasPuntuaciones = () => {
 
   return (
     <div className="inicio">
+       <abbr title="Inicio"><BiArrowBack className='iconovolver' onClick={handleClickVolver}/></abbr>
       <h1 className="titulomaxpuntuaciones"><b>Puntuaciones Modo Clasico</b></h1>
       <hr />
       <br/>
@@ -75,7 +77,6 @@ const MaximasPuntuaciones = () => {
           </tr>
         </tbody>
       </table>
-      <button onClick={handleClickVolver} className="btn boton_maxpunt mt-5" type="submit">Volver a Inicio</button>
     </div>
   )
 }

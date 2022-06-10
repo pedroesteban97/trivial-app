@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import useAxios from '../hooks/useAxios';
 import { CircularProgress, Typography } from '@mui/material';
 import Reloj from '../components/Reloj';
-import { GrScorecard } from "react-icons/gr";
 import { handleAmountChange, handleScoreChange } from '../redux/actions';
 import { useDispatch } from 'react-redux';
+import { BiArrowBack } from 'react-icons/bi';
 
 
 const PreguntasContrarrelojInicio = () => {
@@ -32,7 +32,7 @@ const PreguntasContrarrelojInicio = () => {
 
   };
 
-  const handleClick = (e) => {
+  const handleVolverInicio= (e) => {
     e.preventDefault();
     navigate("/");
   };
@@ -40,6 +40,7 @@ const PreguntasContrarrelojInicio = () => {
   
   return (
       <div className="iniciocontrarreloj">
+        <abbr title="Inicio"><BiArrowBack className='iconovolver' onClick={handleVolverInicio}/></abbr>
         <h1 className="tituloportada"><b>Modo Contrarreloj</b></h1>
         <hr/>
         
@@ -51,7 +52,6 @@ const PreguntasContrarrelojInicio = () => {
           </div>
           <div className='text-center'>
           <button className="btn boton_personalizadoinicio" type="submit">Comenzar</button>
-          <button onClick={handleClick} className="btn boton_personalizadoinicio" type="submit">Volver a Inicio</button>
           </div>
         </form>
       </div>

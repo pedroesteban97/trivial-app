@@ -30,8 +30,6 @@ const PreguntasContrarreloj = () => {
   let apiUrl = `/api.php?amount=${cantidadPreguntas}`;
 
 
-
-
   const { response, loading } = useAxios({ url: apiUrl });
   const [preguntaIndice, setPreguntaIndice] = useState(0);
   const [opciones, setOpciones] = useState([]);
@@ -57,6 +55,23 @@ const PreguntasContrarreloj = () => {
         <CircularProgress />
       </div>
     );
+  }
+
+  if (response.response_code !== 0) {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Vaya... algo salió mal',
+      text: 'Se ha producido un error a la hora de cargar las preguntas. Por favor, inicia una nueva partida',
+      showDenyButton: false,
+      denyButtonText: `NO`,
+      confirmButtonText: 'Volver',
+      allowOutsideClick: false,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        navigate("/preguntascontrarrelojinicio");
+        window.location.replace('');
+      }
+    })
   }
 
   const handleClickAnswer = (e) => {

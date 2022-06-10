@@ -5,26 +5,26 @@ body {
     background-size: cover;
     background-repeat: repeat-y;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 .inicio {
     background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
     border: solid rgb(54, 54, 54) 5px;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto; 
     padding: 30px;
     border-radius: 12px;
     box-shadow: 5px 5px 20px #1883ba;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 630px) {
     .inicio {
         background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
         border: solid rgb(54, 54, 54) 5px;
         width: 65%;
-        height: 500px;
+        height: auto;
         margin: 0 auto;
         padding: 30px;
         border-radius: 12px;
@@ -36,8 +36,8 @@ body {
     .inicio {
         background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
         border: solid rgb(54, 54, 54) 5px;
-        width: 38%;
-        height: 500px;
+        width: 40%;
+        height: auto;
         margin: 0 auto;
         padding: 30px;
         border-radius: 12px;
@@ -48,7 +48,7 @@ body {
     background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
     border: solid rgb(54, 54, 54) 5px;
     width: 90%;
-    height: 670px;
+    height: auto;
     margin: 0 auto;
     padding: 30px;
     border-radius: 12px;
@@ -59,7 +59,7 @@ body {
         background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
         border: solid rgb(54, 54, 54) 5px;
         width: 70%;
-        height: 630px;
+        height: auto;
         margin: 0 auto;
         padding: 30px;
         border-radius: 12px;
@@ -105,7 +105,7 @@ body {
         background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
         border: solid rgb(54, 54, 54) 5px;
         width: 40%;
-        height: 630px;
+        height: auto;
         margin: 0 auto;
         padding: 30px;
         border-radius: 12px;
@@ -150,7 +150,7 @@ body {
     background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
     border: solid rgb(54, 54, 54) 5px;
     width: 90%;
-    height: 755px;
+    height: auto;
     margin: 0 auto;
     padding: 30px;
     border-radius: 12px;
@@ -161,19 +161,19 @@ body {
         background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
         border: solid rgb(54, 54, 54) 5px;
         width: 60%;
-        height: 600px;
+        height: auto;
         margin: 0 auto;
         padding: 30px;
         border-radius: 12px;
         box-shadow: 5px 5px 20px #1883ba;
     }
 }
-@media (min-width: 1310px) {
+@media (min-width: 1354px) {
     .iniciocontrarreloj {
         background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(../media/images/trivialfondo2.jpg);
         border: solid rgb(54, 54, 54) 5px;
         width: 40%;
-        height: 600px;
+        height: auto;
         margin: 0 auto;
         padding: 30px;
         border-radius: 12px;
@@ -240,6 +240,15 @@ body {
 .boton_comienza:hover {
     color: #ffffff;
     background-color: rgba(17, 142, 17, 0.727);
+}
+
+.iconovolver {
+    float: left;
+    margin-top: 11px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #C62828;
+    font-weight: bold;
 }
 
 .boton_vuelveinicio {
@@ -494,7 +503,7 @@ hr {
 
 .reloj h2 {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .iconoexit {
@@ -561,6 +570,7 @@ hr {
 }
 
 .iconotabla {
+    margin-top: 11px;
     float: right;
     font-size: 30px;
     cursor: pointer;

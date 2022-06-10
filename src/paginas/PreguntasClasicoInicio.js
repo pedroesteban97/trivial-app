@@ -8,6 +8,7 @@ import { CircularProgress, Typography } from '@mui/material';
 import { GrScorecard } from "react-icons/gr";
 import Swal from 'sweetalert2';
 import { useSelector } from 'react-redux';
+import { BiArrowBack } from 'react-icons/bi';
 
 const Opciones = () => {
 
@@ -63,6 +64,7 @@ const Opciones = () => {
   
   return (
       <div className="inicioclasico">
+        <abbr title="Inicio"><BiArrowBack className='iconovolver' onClick={handleVolverInicio}/></abbr>
         <abbr title="PUNTUACIONES"><GrScorecard className='iconotabla' onClick={handlePuntuaciones} /></abbr>
         <h1 className="tituloportada"><b>Modo clásico</b></h1>
         <hr/>
@@ -73,7 +75,6 @@ const Opciones = () => {
           <NumeroPreguntas />
           <div className="text-center">
           <button className="btn boton_personalizadoinicio mt-4" type="submit">Comenzar</button>
-          <button onClick={handleVolverInicio} className="btn boton_personalizadoinicio" >Volver a Inicio</button>
           </div>
         </form>
       </div>
